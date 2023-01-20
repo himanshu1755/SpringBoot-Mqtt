@@ -192,3 +192,6 @@
 20-01-2023 22:39:29.687 [32mDEBUG [MQTT Call: mqtt-clientpaho157965083958167] MqttClient.connectComplete:90 : [mConnected MQTT Client:[mqtt-clientpaho157965083958167]
 20-01-2023 22:39:29.687 [36mINFO  [MQTT Call: mqtt-clientpaho157965083958167] MqttClient.subscribe:140 : [mMqttClient Id: mqtt-clientpaho157965083958167 
 20-01-2023 22:39:36.690 [32mDEBUG [MQTT Call: mqtt-clientpaho157965083958167] MqttClient.messageArrived:113 : [mtopic:(himanshu) ----- Message: hi
+20-01-2023 22:47:39.008 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:174 : [mRemoving {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20-01-2023 22:47:39.009 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:174 : [mChannel 'application.errorChannel' has 0 subscriber(s).
+20-01-2023 22:47:39.010 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:292 : [mstopped bean '_org.springframework.integration.errorLogger'
