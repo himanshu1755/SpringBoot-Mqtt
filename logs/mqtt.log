@@ -1,0 +1,58 @@
+20-01-2023 21:50:45.546 [36mINFO  [main] StartupInfoLogger.logStarting:51 : [mStarting MqttApplication using Java 17.0.2 with PID 80210 (/Users/himanshuverma/Desktop/MyGithub/SpringBoot-Mqtt/target/classes started by himanshuverma in /Users/himanshuverma/Desktop/MyGithub/SpringBoot-Mqtt)
+20-01-2023 21:50:45.571 [36mINFO  [main] SpringApplication.logStartupProfileInfo:630 : [mNo active profile set, falling back to 1 default profile: "default"
+20-01-2023 21:50:46.516 [36mINFO  [main] LogAccessor.info:292 : [mNo bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20-01-2023 21:50:46.536 [36mINFO  [main] LogAccessor.info:292 : [mNo bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20-01-2023 21:50:47.038 [36mINFO  [main] TomcatWebServer.initialize:108 : [mTomcat initialized with port(s): 8080 (http)
+20-01-2023 21:50:47.048 [36mINFO  [main] DirectJDKLog.log:173 : [mInitializing ProtocolHandler ["http-nio-8080"]
+20-01-2023 21:50:47.050 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting service [Tomcat]
+20-01-2023 21:50:47.050 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting Servlet engine: [Apache Tomcat/10.1.4]
+20-01-2023 21:50:47.128 [36mINFO  [main] DirectJDKLog.log:173 : [mInitializing Spring embedded WebApplicationContext
+20-01-2023 21:50:47.132 [36mINFO  [main] ServletWebServerApplicationContext.prepareWebApplicationContext:291 : [mRoot WebApplicationContext: initialization completed in 1477 ms
+20-01-2023 21:50:48.058 [36mINFO  [main] LogAccessor.info:174 : [mAdding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20-01-2023 21:50:48.063 [36mINFO  [main] LogAccessor.info:174 : [mChannel 'application.errorChannel' has 1 subscriber(s).
+20-01-2023 21:50:48.064 [36mINFO  [main] LogAccessor.info:292 : [mstarted bean '_org.springframework.integration.errorLogger'
+20-01-2023 21:50:48.066 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting ProtocolHandler ["http-nio-8080"]
+20-01-2023 21:50:48.088 [36mINFO  [main] TomcatWebServer.start:220 : [mTomcat started on port(s): 8080 (http) with context path ''
+20-01-2023 21:50:48.104 [36mINFO  [main] StartupInfoLogger.logStarted:57 : [mStarted MqttApplication in 3.52 seconds (process running for 9.506)
+20-01-2023 21:51:32.858 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:174 : [mRemoving {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20-01-2023 21:51:32.860 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:174 : [mChannel 'application.errorChannel' has 0 subscriber(s).
+20-01-2023 21:51:32.860 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:292 : [mstopped bean '_org.springframework.integration.errorLogger'
+20-01-2023 21:51:45.138 [36mINFO  [main] StartupInfoLogger.logStarting:51 : [mStarting MqttApplication using Java 17.0.2 with PID 80276 (/Users/himanshuverma/Desktop/MyGithub/SpringBoot-Mqtt/target/classes started by himanshuverma in /Users/himanshuverma/Desktop/MyGithub/SpringBoot-Mqtt)
+20-01-2023 21:51:45.155 [36mINFO  [main] SpringApplication.logStartupProfileInfo:630 : [mNo active profile set, falling back to 1 default profile: "default"
+20-01-2023 21:51:46.124 [36mINFO  [main] LogAccessor.info:292 : [mNo bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20-01-2023 21:51:46.141 [36mINFO  [main] LogAccessor.info:292 : [mNo bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20-01-2023 21:51:46.754 [36mINFO  [main] TomcatWebServer.initialize:108 : [mTomcat initialized with port(s): 8080 (http)
+20-01-2023 21:51:46.765 [36mINFO  [main] DirectJDKLog.log:173 : [mInitializing ProtocolHandler ["http-nio-8080"]
+20-01-2023 21:51:46.767 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting service [Tomcat]
+20-01-2023 21:51:46.768 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting Servlet engine: [Apache Tomcat/10.1.4]
+20-01-2023 21:51:46.878 [36mINFO  [main] DirectJDKLog.log:173 : [mInitializing Spring embedded WebApplicationContext
+20-01-2023 21:51:46.884 [36mINFO  [main] ServletWebServerApplicationContext.prepareWebApplicationContext:291 : [mRoot WebApplicationContext: initialization completed in 1658 ms
+20-01-2023 21:51:47.729 [36mINFO  [main] LogAccessor.info:174 : [mAdding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20-01-2023 21:51:47.733 [36mINFO  [main] LogAccessor.info:174 : [mChannel 'application.errorChannel' has 1 subscriber(s).
+20-01-2023 21:51:47.734 [36mINFO  [main] LogAccessor.info:292 : [mstarted bean '_org.springframework.integration.errorLogger'
+20-01-2023 21:51:47.736 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting ProtocolHandler ["http-nio-8080"]
+20-01-2023 21:51:47.754 [36mINFO  [main] TomcatWebServer.start:220 : [mTomcat started on port(s): 8080 (http) with context path ''
+20-01-2023 21:51:47.772 [36mINFO  [main] StartupInfoLogger.logStarted:57 : [mStarted MqttApplication in 3.885 seconds (process running for 10.545)
+20-01-2023 21:52:07.127 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:174 : [mRemoving {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20-01-2023 21:52:07.128 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:174 : [mChannel 'application.errorChannel' has 0 subscriber(s).
+20-01-2023 21:52:07.129 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:292 : [mstopped bean '_org.springframework.integration.errorLogger'
+20-01-2023 21:52:17.701 [36mINFO  [main] StartupInfoLogger.logStarting:51 : [mStarting MqttApplication using Java 17.0.2 with PID 80330 (/Users/himanshuverma/Desktop/MyGithub/SpringBoot-Mqtt/target/classes started by himanshuverma in /Users/himanshuverma/Desktop/MyGithub/SpringBoot-Mqtt)
+20-01-2023 21:52:17.724 [36mINFO  [main] SpringApplication.logStartupProfileInfo:630 : [mNo active profile set, falling back to 1 default profile: "default"
+20-01-2023 21:52:18.711 [36mINFO  [main] LogAccessor.info:292 : [mNo bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20-01-2023 21:52:18.730 [36mINFO  [main] LogAccessor.info:292 : [mNo bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20-01-2023 21:52:19.324 [36mINFO  [main] TomcatWebServer.initialize:108 : [mTomcat initialized with port(s): 8080 (http)
+20-01-2023 21:52:19.337 [36mINFO  [main] DirectJDKLog.log:173 : [mInitializing ProtocolHandler ["http-nio-8080"]
+20-01-2023 21:52:19.339 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting service [Tomcat]
+20-01-2023 21:52:19.340 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting Servlet engine: [Apache Tomcat/10.1.4]
+20-01-2023 21:52:19.450 [36mINFO  [main] DirectJDKLog.log:173 : [mInitializing Spring embedded WebApplicationContext
+20-01-2023 21:52:19.456 [36mINFO  [main] ServletWebServerApplicationContext.prepareWebApplicationContext:291 : [mRoot WebApplicationContext: initialization completed in 1646 ms
+20-01-2023 21:52:20.313 [36mINFO  [main] LogAccessor.info:174 : [mAdding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20-01-2023 21:52:20.318 [36mINFO  [main] LogAccessor.info:174 : [mChannel 'application.errorChannel' has 1 subscriber(s).
+20-01-2023 21:52:20.318 [36mINFO  [main] LogAccessor.info:292 : [mstarted bean '_org.springframework.integration.errorLogger'
+20-01-2023 21:52:20.320 [36mINFO  [main] DirectJDKLog.log:173 : [mStarting ProtocolHandler ["http-nio-8080"]
+20-01-2023 21:52:20.338 [36mINFO  [main] TomcatWebServer.start:220 : [mTomcat started on port(s): 8080 (http) with context path ''
+20-01-2023 21:52:20.355 [36mINFO  [main] StartupInfoLogger.logStarted:57 : [mStarted MqttApplication in 3.641 seconds (process running for 9.635)
+20-01-2023 21:52:20.360 [36mINFO  [main] MqttApplication.main:13 : [mmw
+20-01-2023 21:52:32.972 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:174 : [mRemoving {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20-01-2023 21:52:32.973 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:174 : [mChannel 'application.errorChannel' has 0 subscriber(s).
+20-01-2023 21:52:32.973 [36mINFO  [SpringApplicationShutdownHook] LogAccessor.info:292 : [mstopped bean '_org.springframework.integration.errorLogger'

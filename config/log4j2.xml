@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="120" status="TRACE">
+    <Properties>
+        <Property name="baseDir">logs</Property>
+        <Property name="baseDirError">logs/errorlog</Property>
+        <Property name="delete_lastmodified">P2D</Property>
+        <Property name="rollover_size">250 MB</Property>
+        <Property name="rollover_size_error">250 MB</Property>
+    </Properties>
+    
+    <CustomLevels>
+        <CustomLevel name="DIAG" intLevel="350"/>
+        <CustomLevel name="NOTICE" intLevel="450"/>
+        <CustomLevel name="VERBOSE" intLevel="550"/>
+    </CustomLevels>
+    
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} %highlight{%-5p [%t] %C{1}.%M:%L : }{ERROR=red, FATAL=Bright red blink,
+                    WARN=yellow, DIAG=Bright cyan, INFO=cyan, NOTICE=Bright green, DEBUG=green, VERBOSE=Bright blue,
+                    TRACE=blue}%msg%n%throwable
+                </Pattern>
+            </PatternLayout>
+        </Console>
+        
+        <RollingFile name="ALL_LEVELS" fileName="${baseDir}/mqtt.log"
+                     filePattern="${baseDir}/mqtt_%d{dd_MM_yyyy}_%i.log">
+            <LevelRangeFilter minLevel="ERROR" maxLevel="TRACE" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <Pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} %highlight{%-5p [%t] %C{1}.%M:%L : }{ERROR=red, FATAL=Bright red
+                    blink, WARN=yellow, DIAG=Bright cyan, INFO=cyan, NOTICE=Bright green, DEBUG=green, VERBOSE=Bright
+                    blue, TRACE=blue}%msg%n%throwable
+                </Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="${rollover_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy  max="10" fileIndex="nomax">
+                <Delete basePath="${baseDir}" maxDepth="1">
+                    <IfFileName glob="mqtt_*.log*" />
+                    <IfLastModified age="${delete_lastmodified}" >
+                    </IfLastModified>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+        <RollingFile name="ERROR_LOG" fileName="${baseDirError}/error.log"
+                     filePattern="${baseDirError}/mqtt-error_%d{dd-MM-yyyy}_%i.log">
+            <LevelRangeFilter minLevel="FATAL" maxLevel="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} %highlight{%-5level [%t] %C{1}.%M:%L -}{ERROR=red, FATAL=red blink, WARN=yellow} %msg%n%throwable</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="${rollover_size_error}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10" fileIndex="nomax">
+                <Delete basePath="${baseDirError}" maxDepth="1">
+                    <IfFileName glob="mqtt-error_*.log" />
+                    <IfLastModified age="${delete_lastmodified}" >
+                    </IfLastModified>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="com.example.mqtt" level="TRACE" additivity="false" includeLocation="true">
+            <AppenderRef ref="ALL_LEVELS"/>
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="ERROR_LOG"/>
+        </AsyncLogger>
+
+        <Root level="INFO" additivity="false">
+            <AppenderRef ref="ALL_LEVELS"/>
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="ERROR_LOG"/>
+        </Root>
+    </Loggers>
+</Configuration>
