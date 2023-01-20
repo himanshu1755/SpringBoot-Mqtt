@@ -1,1 +1,3 @@
 com/example/mqtt/MqttApplication.class
+com/example/mqtt/connection/MqttClient.class
+com/example/mqtt/StartupRunner.class

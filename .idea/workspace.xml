@@ -46,6 +46,10 @@
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.mqtt" />
+      <recent name="com.example.mqtt.connection" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="MqttApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
