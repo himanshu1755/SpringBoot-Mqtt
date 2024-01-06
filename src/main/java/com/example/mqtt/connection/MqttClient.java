@@ -17,10 +17,6 @@ import org.springframework.core.task.TaskExecutor;
 import org.springframework.stereotype.Component;
 
 
-/**
- *
- * @author ngucc
- */
 @Log4j2
 @Component
 public class MqttClient implements MqttCallbackExtended {
